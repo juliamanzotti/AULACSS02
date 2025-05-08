@@ -1,47 +1,46 @@
-/* Estilos gerais para o container dos cards */
+
 .container {
-    display: flex; /* Habilita o Flexbox para o layout dos filhos (cards) */
-    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
-    gap: 20px; /* Espaçamento entre os cards */
-    padding: 20px; /* Espaçamento interno ao redor do container */
-    max-width: 960px; /* Largura máxima do container para evitar que os cards fiquem muito largos em telas grandes */
-    margin: 0 auto; /* Centraliza o container na tela */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px; 
+    max-width: 960px; 
+    margin: 0 auto;
 }
 
-/* Estilos para cada card individual */
+
 .card {
-    background-color: #f9f9f9; /* Cor de fundo suave para os cards */
-    border-radius: 8px; /* Bordas levemente arredondadas */
-    padding: 25px; /* Espaçamento interno maior para o conteúdo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada para destacar os cards */
-    flex: 1; /* Permite que os cards cresçam igualmente para preencher o espaço horizontal disponível */
-    min-width: 300px; /* Largura mínima para evitar que os cards fiquem muito estreitos antes de empilhar */
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    padding: 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    flex: 1; 
+    min-width: 300px; 
 }
 
-/* Estilos para os títulos dos cards */
+
 .card h2 {
-    color: #337ab7; /* Cor primária para os títulos */
-    margin-top: 0; /* Remove a margem superior padrão do h2 */
-    margin-bottom: 15px; /* Adiciona espaço abaixo do título */
-    border-bottom: 2px solid #eee; /* Linha sutil abaixo do título */
-    padding-bottom: 10px; /* Espaçamento abaixo da linha */
-}
+    color: #337ab7; 
+    margin-top: 0;
+    margin-bottom: 15px; 
+    border-bottom: 2px solid #eee; 
+    padding-bottom: 10px; 
 
-/* Estilos para o conteúdo dos cards */
+
 .card p {
-    line-height: 1.6; /* Melhora a legibilidade do texto */
-    color: #555; /* Cor do texto um pouco mais escura */
+    line-height: 1.6;
+    color: #555; 
 }
 
-/* Media query para telas menores (celulares - largura máxima de 768px) */
+
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Alinha os cards verticalmente (empilhados) */
+        flex-direction: column; 
     }
 
     .card {
-        width: 100%; /* Os cards ocupam toda a largura do container */
-        min-width: auto; /* Remove a largura mínima para ocupar toda a largura disponível */
-        margin-bottom: 20px; /* Adiciona espaço entre os cards empilhados */
+        width: 100%;
+        min-width: auto; 
+        margin-bottom: 20px; 
     }
 }
